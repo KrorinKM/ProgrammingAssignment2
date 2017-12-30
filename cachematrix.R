@@ -1,8 +1,9 @@
-## pair of functions that cache the inverse of a matrix
+## The following pair of functions allows to calculate the inverse of a matrix and store it in the cache. If the inverse 
+## has already been calculated, it will retrieve it from the cache instead of calculating it again.
 
 ## This function creates a special "matrix" object that can cache its inverse.
 
-makeMatrix <- function(x = matrix) {
+makeCacheMatrix <- function(x = matrix) {
   inv <- NULL
   set <- function(y) {
     x <<- y
